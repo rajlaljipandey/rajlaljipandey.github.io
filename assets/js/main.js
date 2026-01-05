@@ -19,3 +19,14 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.15 });
 
 reveals.forEach(el => observer.observe(el));
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    document.querySelector(link.getAttribute('href'))
+      .scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+document.getElementById("footer-year").textContent = new Date().getFullYear();
