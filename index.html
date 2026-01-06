@@ -2,26 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Raj Lalji Pandey | Portfolio</title>
+
+  <title>Raj Lalji Pandey | Data Analyst & Machine Learning Developer</title>
+
+  <!-- SEO -->
+  <meta name="description"
+        content="Portfolio of Raj Lalji Pandey, a Data Analyst and Machine Learning Developer showcasing real-world projects, dashboards, and ML models." />
+
+  <meta name="keywords"
+        content="Data Analyst Portfolio, Machine Learning Developer, Python, SQL, Power BI, Data Science Projects" />
+
+  <meta name="author" content="Raj Lalji Pandey" />
+
+  <!-- Mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-..."
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css"/>
+
+  <!-- Structured Data (SEO GOLD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Raj Lalji Pandey",
+    "jobTitle": "Data Analyst & Machine Learning Developer",
+    "url": "https://rajlaljipandey.github.io/",
+    "sameAs": [
+      "https://github.com/rajlaljipandey",
+      "https://www.linkedin.com/in/raj-pandey-51288a237/"
+    ],
+    "knowsAbout": [
+      "Data Analysis",
+      "Machine Learning",
+      "Python",
+      "SQL",
+      "Power BI",
+      "Excel"
+    ]
+  }
+  </script>
 </head>
+
 <body>
 
-<!-- ================= NAVBAR =====+============ -->
-<header class="navbar">
+<!-- ================= NAVBAR ================= -->
+<header class="navbar" role="banner">
   <div class="nav-container">
-    <div class="logo">Raj<span>.</span></div>
 
-    <nav class="nav-links">
+    <div class="logo" aria-label="Website logo">Raj<span>.</span></div>
+
+    <nav class="nav-links" role="navigation" aria-label="Primary navigation">
       <a href="#home">Home</a>
       <a href="#projects">Projects</a>
       <a href="#about">About</a>
@@ -29,20 +72,28 @@
       <a href="#contact">Contact</a>
     </nav>
 
-    <div class="hamburger">
+    <button class="hamburger" aria-label="Toggle navigation menu">
       <span></span><span></span><span></span>
-    </div>
+    </button>
   </div>
 </header>
 
+<!-- ================= MAIN ================= -->
+<main>
+
 <!-- ================= HERO ================= -->
-<section class="hero" id="home">
+<section class="hero" id="home" aria-labelledby="hero-heading">
   <div class="hero-container">
 
     <div class="hero-text reveal">
       <p class="intro">Hi, I'm</p>
-      <h1>Raj Lalji <span>Pandey</span></h1>
+
+      <h1 id="hero-heading">
+        Raj Lalji <span>Pandey</span>
+      </h1>
+
       <h2>Data Analyst & Machine Learning Developer</h2>
+
       <p class="description">
         Turning complex data into actionable insights and building intelligent,
         data-driven solutions.
@@ -53,40 +104,83 @@
         <a href="resume/resume.pdf" class="btn secondary" download>Download CV</a>
       </div>
 
-      <!-- SOCIAL ICONS -->
-            <div class="hero-socials">
-        <a href="https://www.linkedin.com/in/raj-pandey-51288a237/" target="_blank" aria-label="LinkedIn">
+      <!-- SOCIAL LINKS -->
+      <div class="hero-socials" aria-label="Social media links">
+        <a href="https://www.linkedin.com/in/raj-pandey-51288a237/" target="_blank" aria-label="LinkedIn profile">
           <i class="fab fa-linkedin-in"></i>
         </a>
-
-        <a href="https://github.com/rajlaljipandey" target="_blank" aria-label="GitHub">
+        <a href="https://github.com/rajlaljipandey" target="_blank" aria-label="GitHub profile">
           <i class="fab fa-github"></i>
         </a>
-
-        <a href="https://www.instagram.com/16._raj/" target="_blank" aria-label="Instagram">
+        <a href="https://www.instagram.com/16._raj/" target="_blank" aria-label="Instagram profile">
           <i class="fab fa-instagram"></i>
         </a>
-
-        <a href="https://wa.me/919517368349" target="_blank" aria-label="WhatsApp">
+        <a href="https://wa.me/919517368349" target="_blank" aria-label="WhatsApp contact">
           <i class="fab fa-whatsapp"></i>
         </a>
-
-        <a href="mailto:rajlaljipandey@gmail.com" aria-label="Email">
+        <a href="mailto:rajlaljipandey@gmail.com" aria-label="Send email">
           <i class="fas fa-envelope"></i>
         </a>
       </div>
-
     </div>
 
     <div class="hero-image reveal">
       <div class="glow"></div>
       <div class="ring"></div>
-      <img src="assets/images/profile-removebg.png" alt="Raj Lalji Pandey"/>
+      <img
+        src="assets/images/profile-removebg.png"
+        alt="Portrait of Raj Lalji Pandey, Data Analyst and Machine Learning Developer" />
     </div>
 
   </div>
 </section>
 
+<!-- ================= CAREER STATS ================= -->
+<section class="stats" aria-labelledby="stats-heading">
+  <h2 id="stats-heading" class="visually-hidden">
+    Career statistics and professional achievements
+  </h2>
+
+  <div class="stats-container reveal" role="list">
+
+    <article class="stat-card" role="listitem">
+      <div class="stat-icon" aria-hidden="true">
+        <i class="fas fa-diagram-project"></i>
+      </div>
+      <h3 class="counter" data-target="10" aria-live="polite">0</h3>
+      <p>Projects Completed</p>
+    </article>
+
+    <article class="stat-card" role="listitem">
+      <div class="stat-icon" aria-hidden="true">
+        <i class="fas fa-brain"></i>
+      </div>
+      <h3 class="counter" data-target="5" aria-live="polite">0</h3>
+      <p>ML Models Built</p>
+    </article>
+
+    <article class="stat-card" role="listitem">
+      <div class="stat-icon" aria-hidden="true">
+        <i class="fas fa-chart-line"></i>
+      </div>
+      <h3 class="counter" data-target="3" aria-live="polite">0</h3>
+      <p>Dashboards Created</p>
+    </article>
+
+    <article class="stat-card" role="listitem">
+      <div class="stat-icon" aria-hidden="true">
+        <i class="fas fa-clock"></i>
+      </div>
+      <h3 class="counter" data-target="1" aria-live="polite">0</h3>
+      <p>Years of Practice</p>
+    </article>
+
+  </div>
+
+  <p class="stats-note">
+    Consistently building real-world data analytics and machine learning projects since 2023.
+  </p>
+</section>
 <!-- ================= PROJECTS ================= -->
 <section class="projects" id="projects">
   <div class="section-header reveal">
@@ -464,48 +558,83 @@
 
 
 
-<footer class="site-footer">
+<footer class="site-footer" role="contentinfo" aria-labelledby="footer-heading">
+  <h2 id="footer-heading" class="visually-hidden">
+    Website footer with navigation and social links
+  </h2>
+
   <div class="footer-container">
 
-    <!-- Left -->
-    <div class="footer-brand">
+    <!-- Brand / About -->
+    <section class="footer-brand" aria-label="About the portfolio owner">
       <h3>Raj<span>.</span></h3>
-      <p>Turning data into meaningful insights with analytics & machine learning.</p>
-    </div>
+      <p>
+        Turning data into meaningful insights with analytics and machine learning.
+      </p>
+    </section>
 
-    <!-- Center -->
-    <div class="footer-links">
+    <!-- Footer Navigation -->
+    <nav class="footer-links" aria-label="Footer navigation">
       <a href="#home">Home</a>
       <a href="#projects">Projects</a>
       <a href="#about">About</a>
       <a href="#resume">Resume</a>
       <a href="#contact">Contact</a>
-    </div>
+    </nav>
 
-    <!-- Right -->
-    <div class="footer-socials">
-      <a href="https://www.linkedin.com/in/raj-pandey-51288a237/" target="_blank" aria-label="LinkedIn">
-        <i class="fab fa-linkedin-in"></i>
+    <!-- Social Links -->
+    <section class="footer-socials" aria-label="Social media links">
+      <a
+        href="https://www.linkedin.com/in/raj-pandey-51288a237/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn profile"
+      >
+        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
       </a>
-      <a href="https://github.com/rajlaljipandey" target="_blank" aria-label="GitHub">
-        <i class="fab fa-github"></i>
+
+      <a
+        href="https://github.com/rajlaljipandey"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub profile"
+      >
+        <i class="fab fa-github" aria-hidden="true"></i>
       </a>
-      <a href="https://www.instagram.com/16._raj/" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
+
+      <a
+        href="https://www.instagram.com/16._raj/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagram profile"
+      >
+        <i class="fab fa-instagram" aria-hidden="true"></i>
       </a>
-      <a href="https://wa.me/919517368349" target="_blank" aria-label="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
+
+      <a
+        href="https://wa.me/919517368349"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp contact"
+      >
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
       </a>
-      <a href="mailto:rajlaljipandey@gmail.com" aria-label="Email">
-        <i class="fas fa-envelope"></i>
+
+      <a
+        href="mailto:rajlaljipandey@gmail.com"
+        aria-label="Send email to Raj Lalji Pandey"
+      >
+        <i class="fas fa-envelope" aria-hidden="true"></i>
       </a>
-    </div>
+    </section>
 
   </div>
 
-  <!-- Bottom -->
+  <!-- Copyright -->
   <div class="footer-bottom">
-    © <span id="footer-year"></span> Raj Lalji Pandey. All rights reserved.
+    © <span id="footer-year"></span>
+    <span aria-label="Copyright owner">Raj Lalji Pandey</span>.
+    All rights reserved.
   </div>
 </footer>
 
