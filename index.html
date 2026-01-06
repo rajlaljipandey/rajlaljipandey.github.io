@@ -18,7 +18,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+  rel="stylesheet">
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
@@ -54,6 +57,11 @@
     ]
   }
   </script>
+
+  <link rel="preload"
+      as="image"
+      href="assets/images/profile-removebg.png">
+
 </head>
 
 <body>
@@ -193,7 +201,11 @@
 
     <!-- Project 1 -->
     <div class="project-card reveal">
-  <img src="assets/images/project-1.png" alt="Sales Data Dashboard">
+  <img
+  src="assets/images/project-1.png"
+  alt="Sales Data Dashboard"
+  loading="lazy"
+  decoding="async">
 
   <div class="project-content">
     <h3>Sales Data Dashboard (Excel)</h3>
@@ -225,7 +237,11 @@
 
     <!-- Project 2 -->
     <div class="project-card reveal">
-  <img src="assets/images/project-2.png" alt="Movie Recommendation System">
+  <img
+  src="assets/images/project-2.png"
+  alt="Movie Recommendation System"
+  loading="lazy"
+  decoding="async">
 
   <div class="project-content">
     <h3>Movie Recommendation System</h3>
@@ -265,7 +281,11 @@
 
     <!-- Project 3 -->
     <div class="project-card reveal">
-  <img src="assets/images/project-3.png" alt="Election Sentiment Analysis">
+  <img
+  src="assets/images/project-3.png"
+  alt="Election Sentiment Analysis"
+  loading="lazy"
+  decoding="async">
 
   <div class="project-content">
     <h3>Election Sentiment Analysis</h3>
@@ -640,6 +660,6 @@
 
 
 <!-- JS -->
-<script src="assets/js/main.js"></script>
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>
