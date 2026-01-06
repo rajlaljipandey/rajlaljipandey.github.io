@@ -548,6 +548,46 @@ body {
   }
 }
 
+/* ================= SEE ALL PROJECTS CTA ================= */
+.projects-cta {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.see-all-link {
+  font-size: 16px;
+  font-weight: 600;
+  color: #8b5cf6; /* same purple */
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.see-all-link:hover {
+  color: #a78bfa;
+  transform: translateX(4px);
+}
+
+.see-all-link {
+  position: relative;
+}
+
+.see-all-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #8b5cf6;
+  transition: width 0.3s ease;
+}
+
+.see-all-link:hover::after {
+  width: 100%;
+}
+
 /* ================= ABOUT SECTION ================= */
 .about {
   padding: 120px 8%;
@@ -1769,3 +1809,4 @@ section::after,
   white-space: nowrap !important;
   border: 0 !important;
 }
+
